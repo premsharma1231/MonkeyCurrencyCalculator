@@ -11,7 +11,7 @@ Welcome to **Monkey Currency Calculator**, a fast and user-friendly currency con
 
 ## 📸 Screenshots
 
-![Monkey Currency Calculator](https://your-screenshot-link-here.com)
+![Monkey Currency Calculator](https://raw.githubusercontent.com/premsharma1231/MonkeyCurrencyCalculator/refs/heads/main/Screenshot%20(220).png)
 
 ## 🛠️ Installation
 
@@ -66,7 +66,7 @@ Want to improve this project? Feel free to contribute! Fork the repo and submit 
 
 ## 📞 Contact
 
-📧 **Email:** your-email@example.com  
+📧 **Email:** premsharma786zx@example.com  
 🔗 **GitHub:** [premsharma1231](https://github.com/premsharma1231)  
 🔗 **LinkedIn:** [Sharma Purvish](https://www.linkedin.com/in/sharma-purvish-591120248/)
 
