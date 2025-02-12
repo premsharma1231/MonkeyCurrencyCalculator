@@ -72,11 +72,11 @@ const Liverates = () => {
             <select
               value={baseCurrency}
               onChange={(e) => setBaseCurrency(e.target.value)}
-              className="border text-center px-4 py-2 rounded bg-CalcGreenText text-CalcGreen text-2xl font-Bungee"
+              className="border text-center px-4 py-2 rounded bg-CalcGreenText text-CalcGreen text-2xl font-Bungee appearance-none"
             >
               {currencies.map((currency) => (
                 <option
-                  className="p-2 h-24 hover:bg-CalcGreen"
+                  className=""
                   key={currency}
                   value={currency}
                 >

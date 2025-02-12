@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import AnimatedRoutes from './Components/AnimatedRoutes';  // 🔹 Import animated routes
 
 function App() {
+  document.body.style.overflow = 'hidden';
   return (
     <Router>
       <Navbar />

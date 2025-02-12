@@ -15,7 +15,7 @@ function AnimatedRoutes() {
   const [direction, setDirection] = useState("left"); // Default direction
 
   useEffect(() => {
-    if (location.pathname === "/") setDirection("right");
+    if (location.pathname === "/MonkeyCurrencyCalculator") setDirection("right");
     else setDirection("left");
   }, [location.pathname]);
 
@@ -23,7 +23,7 @@ function AnimatedRoutes() {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route
-          path="/"
+          path="/MonkeyCurrencyCalculator"
           element={
             <motion.div variants={pageVariants(direction)} initial="initial" animate="animate" exit="exit">
               <Calculator />
@@ -31,7 +31,7 @@ function AnimatedRoutes() {
           }
         />
         <Route
-          path="/liverates"
+          path="/MonkeyCurrencyCalculator/liverates"
           element={
             <motion.div variants={pageVariants(direction)} initial="initial" animate="animate" exit="exit">
               <Liverates />
