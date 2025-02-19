@@ -38,7 +38,7 @@ Welcome to **Monkey Currency Calculator**, a fast and user-friendly currency con
 ## 🚀 Deployment
 
 This app is hosted on **GitHub Pages**. You can access it here:
-🔗 [Monkey Currency Calculator](https://premsharma1231.github.io/MonkeyCurrencyCalculator/home)
+🔗 [Monkey Currency Calculator](https://premsharma1231.github.io/MonkeyCurrencyCalculator/)
 
 ## 🏗️ Built With
 
