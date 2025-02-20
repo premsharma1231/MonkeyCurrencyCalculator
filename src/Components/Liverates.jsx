@@ -60,19 +60,37 @@ const Liverates = () => {
 
   return (
     <>
-      <div className="flex items-start mt-14 mx-10 justify-between h-screen">
+      <div className="flex flex-col items-start mt-14 mx-10 justify-between h-screen
+      sm:flex-col
+      md:flex-row
+      lg:flex-row
+      
+      ">
         <div className="flex flex-col justify-center items-center mb-4">
-          <h2 className="text-5xl m-5 text-center font-Bungee text-CalcGreenText">
+          <h2 className="text-2xl m-2 text-center font-Bungee text-CalcGreenText
+          sm:text-5xl sm:m-5
+          md:text-5xl md:m-5
+          lg:text-5xl lg:m-5
+          
+          ">
             Live Exchange Rates
           </h2>
           <div className="flex items-center">
-            <label className="mr-2 font-Bungee text-CalcGreenText text-2xl">
+            <label className="mr-2 font-Bungee text-CalcGreenText text-small
+            sm:text-xl
+            md:text-2xl
+            lg:text-2xl
+            ">
               Select Base Currency:
             </label>
             <select
               value={baseCurrency}
               onChange={(e) => setBaseCurrency(e.target.value)}
-              className="border text-center px-4 py-2 rounded bg-CalcGreenText text-CalcGreen text-2xl font-Bungee appearance-none"
+              className="border text-center px-4 py-2 rounded bg-CalcGreenText text-CalcGreen text-small font-Bungee appearance-none
+              sm:text-2xl sm:px-2
+              md:text-2xl md:px-2
+              lg:text-2xl lg:px-2
+              "
             >
               {currencies.map((currency) => (
                 <option
@@ -87,15 +105,31 @@ const Liverates = () => {
           </div>
         </div>
 
-        <div className="w-5/12 p-4">
-          <div className="max-h-[500px] overflow-y-auto border border-white rounded-md">
+        <div className="w-full p-4
+        sm:w-full
+        md:w-5/12
+        lg:w-5/12
+        ">
+          <div className="max-h-[500px] overflow-y-auto overflow-x-visible w-56 border border-white rounded-md
+          sm:w-56
+          md:w-full
+          lg:w-full
+          ">
             <table className="min-w-full border-collapse">
               <thead>
                 <tr className="bg-CalcGreenText sticky top-0">
-                  <th className="border font-Bungee text-CalcGreen text-2xl p-2">
+                  <th className="border font-Bungee text-CalcGreen text-small p-2
+                  sm:text-xl
+                  md:text-2xl
+                  lg:text-2xl
+                  ">
                     Currency
                   </th>
-                  <th className="border font-Bungee text-CalcGreen text-2xl p-2">
+                  <th className="border font-Bungee text-CalcGreen text-small p-2
+                  sm:text-xl
+                  md:text-2xl
+                  lg:text-2xl
+                  ">
                     Exchange Rate
                   </th>
                 </tr>
@@ -105,15 +139,26 @@ const Liverates = () => {
                   const countryCode = currencyToCountry[currency] || "un";
                   return (
                     <tr key={currency} className="border">
-                      <td className="border text-2xl text-center text-CalcGreenText p-2 flex items-center gap-2">
+                      <td className="border text-small border-none justify-center text-center text-CalcGreenText pt-3 flex items-center gap-2 w-full
+                      sm:text-xl sm:p-0 sm:pt-3
+                      md:text-2xl md:p-2
+                      lg:text-2xl lg:p-2">
                         <img
                           alt={currency}
                           src={`https://flagcdn.com/w40/${countryCode}.png`}
-                          className="w-8 h-5"
+                          className="w-6 h-4
+                          sm:w-8 sm:h-5
+                          md:w-8 md:h-5
+                          lg:w-8 lg:h-5
+                          "
                         />
                         {currency}
                       </td>
-                      <td className="border text-2xl text-center text-CalcGreenText p-2">
+                      <td className="border text-small text-center text-CalcGreenText p-2
+                      sm:text-xl
+                      md:text-2xl
+                      lg:text-2xl              
+                      ">
                         {rate.toFixed(4)}
                       </td>
                     </tr>

@@ -161,11 +161,10 @@ function Calculator() {
                 {/* {isDesktop &&  */}
                 <div className="
                 flex flex-col justify-between items-center m-auto mb-10 w-10/12 h-full py-12 px-8 bg-white shadow-inner shadow-black rounded-lg
-                sm:h-96
-                md:h-96
-                lg:h-96
+                sm:h-full
+                md:h-72
+                lg:h-72
                 ">
-                
                 <div className="flex flex-col justify-between items-center w-full
                 sm:flex-col
                 md:flex-col
@@ -201,7 +200,7 @@ function Calculator() {
                 <div>
                     {isLoading ? (
                         <div className="flex justify-center items-center">
-                            <svg className="animate-spin mt-2 h-8 w-6 text-green-500
+                            <svg className="animate-spin m-2 h-8 w-6 text-green-500
                             sm:mt-10 sm:h-12 sm:w-12
                             md:mt-10 md:h-12 md:w-12
                             lg:mt-10 lg:h-12 lg:w-12
@@ -212,7 +211,7 @@ function Calculator() {
                         </div>
                         ) : (
                         <FontAwesomeIcon
-                            className="cursor-pointer mt-3 h-6 hover:rotate-180 transition-all
+                            className="cursor-pointer m-3 h-6 hover:rotate-180 transition-all
                             sm:m-0 sm:mt-10 sm:h-8
                             md:m-0 md:mt-10 md:h-8
                             lg:m-0 lg:mt-10 lg:h-8
